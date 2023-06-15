@@ -12,7 +12,7 @@ html{
     margin: 0px;
     width: 100vw;
     height: 100vh;
-    background-image: url(gambar/kucing2.jpg);
+    background-image: url(https://storage.googleapis.com/diagnopets-image/kucing2.jpg);
     background-size: cover;
     background-position: center;
 
@@ -58,7 +58,7 @@ margin-left: 100px;
     width: 100vw;
     height: 100vh;
     /* background-color: #7a7f86; */
-    background-image: url(gambar/kucing6.jpg);
+    background-image: url(https://storage.googleapis.com/diagnopets-image/kucing6.jpg);
     background-size: cover;
     background-position: center;
     
