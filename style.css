@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.bagian-utama{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(gambar/kucing2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.tulisan-bagian-utama{
+color: white;
+display: flex;
+flex-direction: column;
+margin-left: 100px;
+}
+
+.tulisan-bagian-utama h1{
+    font-size: 100px;
+}
+
+.tombol-navigasi{
+    margin-top: 50px;
+}
+
+.tombol-navigasi a button{
+
+    font-size: 30px;
+    width: 400px;
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 1s;
+}
+
+.tombol-navigasi button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    width: 500px;
+}
+
+.bagian-pemeriksaan{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #7a7f86; */
+    background-image: url(gambar/kucing6.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.header-pemeriksaan{
+    display: flex;
+    background-color: #bbaaa4;
+    justify-content: center;
+    align-items:end;
+    
+    height: 70px;
+    
+}
+
+.tulisan-header{
+color: #ffffff;
+}
+
+.container-form-pemeriksaan{
+    display: flex;
+    font-weight: 500;
+}
+
+
+.form-pemeriksaan{
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 70%;
+    font-size: 18px;
+
+}
+
+.form-pemeriksaan label{
+  color: white;  
+}
+
+.tombol{
+    margin-left: 195px;
+    margin-top: 50px;
+}
+.tombol button{
+    font-size: 20px;
+    width: 200px;
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 1s;
+}
+
+.tombol button:hover{
+    background-color: #e6ddc7;
+    color: black;
+    border-radius: 25px;
+    
+}
+
+
+.hasil{
+    margin-top: 60px;
+    color: white;
+}
+
+.hasil h1{
+    margin-bottom: 20px;
+}
+
+.hasil .tulisan label{
+    font-size: 20px;
+}
