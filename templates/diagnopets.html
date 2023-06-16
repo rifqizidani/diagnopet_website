@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diagnopets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
+
+<div class="bagian-utama row">
+    <div class="tulisan-bagian-utama col-5">
+        <h1>Diagnopet</h1>
+        <h3>Deteksi tanda-tanda penyakit majikan Anda sedini mungkin, Sehingga dapat segera merespons dengan tindakan yang diperlukan.</h3>
+        <div class="tombol-navigasi">
+            <a href="#bagian-pemeriksaan"><button>Diagnosis hewan anda</button></a>
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+<div class="bagian-pemeriksaan" id="bagian-pemeriksaan">
+  <div class="black-background">
+    <div class="header-pemeriksaan">
+        <h1 class="tulisan-header">Prediksi Penyakit</h1>
+    </div>
+    
+    <div class="container-form-pemeriksaan">
+    <div class="form-pemeriksaan">
+      <form action="{{url_for('predict')}}" method="post">
+        <h1 class="title-form-pemeriksaan">Gejala Penyakit</h1>
+
+        <div class="form-check">
+          <input type="hidden" name="Muntah" value="0" />
+          <input class="form-check-input" type="checkbox" id="Muntah" name="Muntah" value="1" >
+          <label class="form-check-label" for="Muntah">
+            Muntah
+          </label>
+        </div>
+  
+        <div class="form-check">
+          <input type="hidden" name="Diare" value="0" />
+          <input class="form-check-input" type="checkbox" id="Diare" name="Diare" value="1" >
+          <label class="form-check-label" for="Diare">
+            Diare
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="BAB Darah" value="0" />
+          <input class="form-check-input" type="checkbox" id="BAB Darah" name="BAB Darah"  value="1" >
+          <label class="form-check-label" for="BAB Darah">
+            BAB Darah
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Kehilangan Nafsu Makan" value="0" />
+          <input class="form-check-input" type="checkbox" id="Kehilangan Nafsu Makan" name="Kehilangan Nafsu Makan" value="1" >
+          <label class="form-check-label" for="Kehilangan Nafsu Makan">
+            Kehilangan Nafsu Makan
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Anemia" value="0" />
+          <input class="form-check-input" type="checkbox" id="Anemia" name="Anemia" value="1">
+          <label class="form-check-label" for="Anemia">
+            Anemia
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Demam" value="0" />
+          <input class="form-check-input" type="checkbox" id="Demam" name="Demam" value="1">
+          <label class="form-check-label" for="Demam">
+            Demam
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Lesu" value="0" />
+          <input class="form-check-input" type="checkbox" id="Lesu" name="Lesu" value="1">
+          <label class="form-check-label" for="Lesu">
+            Lesu
+          </label>
+        </div>
+  
+        <div class="form-check">
+          <input type="hidden" name="Perut Membesar" value="0" />
+          <input class="form-check-input" type="checkbox" id="Perut Membesar" name="Perut Membesar" value="1">
+          <label class="form-check-label" for="Perut Membesar">
+            Perut Membesar
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Penurunan Berat Badan" value="0" />
+          <input class="form-check-input" type="checkbox" id="Penurunan Berat Badan" name="Penurunan Berat Badan" value="1">
+          <label class="form-check-label" for="Penurunan Berat Badan">
+            Penurunan Berat Badan
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Bulu Rontok" value="0" />
+          <input class="form-check-input" type="checkbox" id="Bulu Rontok" name="Bulu Rontok" value="1" >
+          <label class="form-check-label" for="Bulu Rontok">
+            Bulu Rontok
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Infeksi" value="0" />
+          <input class="form-check-input" type="checkbox" id="Infeksi" name="Infeksi" value="1" >
+          <label class="form-check-label" for="Infeksi">
+            Infeksi
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Gemetar" value="0" />
+          <input class="form-check-input" type="checkbox" id="Gemetar" name="Gemetar" value="1">
+          <label class="form-check-label" for="Gemetar">
+            Gemetar
+          </label>
+        </div>
+  
+        <div class="form-check">
+          <input type="hidden" name="Dehidrasi" value="0" />
+          <input class="form-check-input" type="checkbox" id="Dehidrasi" name="Dehidrasi" value="1">
+          <label class="form-check-label" for="Dehidrasi">
+            Dehidrasi
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Keluar Ingus" value="0" />
+          <input class="form-check-input" type="checkbox" id="Keluar Ingus" name="Keluar Ingus" value="1">
+          <label class="form-check-label" for="Keluar Ingus">
+            Keluar Ingus
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Bulu Kasar" value="0" />
+          <input class="form-check-input" type="checkbox" id="Bulu Kasar" name="Bulu Kasar" value="1" >
+          <label class="form-check-label" for="Bulu Kasar">
+            Bulu Kasar
+          </label>
+        </div>
+           
+        <div class="form-check">
+          <input type="hidden" name="Bersin" value="0" />
+          <input class="form-check-input" type="checkbox" id="Bersin" name="Bersin" value="1" >
+          <label class="form-check-label" for="Bersin">
+            Bersin
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input type="hidden" name="Kotoran Pada Mata" value="0" />
+          <input class="form-check-input" type="checkbox" id="Kotoran Pada Mata" name="Kotoran Pada Mata" value="1" >
+          <label class="form-check-label" for="Kotoran Pada Mata">
+            Kotoran Pada Mata
+          </label>
+        </div>
+  
+        <div class="tombol">
+          <button type="submit">Prediksi Penyakit</button>
+          </div>
+      </form>       
+    </div>
+
+
+    <div class="form-pemeriksaan2">
+
+      
+      <div class="hasil">
+
+      
+
+        <div class="card" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">Kucing anda kemungkinan terjangkit</h5>
+            <h3 class="card-title" id="nama-penyakit">{{ prediction_text }}</h3>
+            <h6 class="card-subtitle mt-3 mb-2">Deskripsi Penyakit</h6>
+            <p class="card-text deskripsi-penyakit" id="deskripsi-penyakit">{{ description }}</p>
+            
+          </div>
+        </div>
+
+       
+
+      </div>        
+        
+
+    </div>
+    </div>
+
+    
+  </div>
+</div>
+
+</body>
+</html>
